@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI= react-scripts build",
+    "build": "react-scripts build",
     "test:ci": "cross-env CI=true react-scripts build --coverage",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
