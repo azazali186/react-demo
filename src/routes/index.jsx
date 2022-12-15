@@ -7,11 +7,11 @@ import DashboardLayout from '../components/layouts/dashboard'
 const index = () => {
   return (
     <Routes>
-      {routes?.map((item,i)=>{
+      {routes?.map((item)=>{
         let mainRoutes = [];
-        mainRoutes.push(<Route path={item.path} key={i} element={<DashboardLayout Children={item.component} />} />)        
-        item.children?.map((childItem, j)=>{
-          mainRoutes.push(<Route path={childItem.path} key={j} element={<DashboardLayout Children={childItem.component} />} />)
+        mainRoutes.push(<Route path={item.path} key={item} element={<DashboardLayout Children={item.component} />} />)        
+        item.children?.map((childItem)=>{
+          mainRoutes.push(<Route path={childItem.path} key={childItem} element={<DashboardLayout Children={childItem.component} />} />)
         })
         return mainRoutes
       })}
