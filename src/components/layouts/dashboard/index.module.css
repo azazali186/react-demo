@@ -1,0 +1,12 @@
+.header{
+    height: 50px;
+    top: 0;
+}
+.footer{
+    height: 50px;
+    bottom: 0;
+}
+.sidebar{
+    width: 200px;
+    height: 95vh;
+}
